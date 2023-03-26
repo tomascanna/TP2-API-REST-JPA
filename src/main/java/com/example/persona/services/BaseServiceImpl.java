@@ -1,12 +1,12 @@
 package com.example.persona.services;
 
+
 import com.example.persona.entities.Base;
-import com.example.persona.entities.Persona;
 import com.example.persona.repositories.BaseRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;

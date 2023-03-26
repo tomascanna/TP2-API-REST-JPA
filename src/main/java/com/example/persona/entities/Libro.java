@@ -1,12 +1,12 @@
 package com.example.persona.entities;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Audited
-public class Libro {
+public class Libro extends Base{
     @Column(name = "titulo")
     private String titulo;
     @Column(name = "fecha")
